@@ -81,7 +81,13 @@ flutter:
           weight: 400
         - asset: assets/fonts/Avenir_Light.ttf
           weight: 300
-        - asset: assets/fonts/Avenir_Bol.ttf
+        - asset: assets/fonts/Avenir_Heavy.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Bold.ttf
           weight: 700
 
   #

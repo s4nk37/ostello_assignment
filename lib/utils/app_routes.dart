@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../ui/screens/home_screen.dart';
+import '../ui/screens/home_screen/home_screen.dart';
 
-class Routes {
-  Routes._();
+class AppRoutes {
+  AppRoutes._();
 
   static const String splashScreen = '/';
   // static const String homeScreen = '/home_screen';

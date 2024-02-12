@@ -2,9 +2,11 @@
 class Assets {
   Assets._();
 
-  // static const String fontsAvenirHeavy = 'assets/fonts/Avenir_Heavy.ttf';
-  // static const String fontsAvenirLight = 'assets/fonts/Avenir_Light.ttf';
-  // static const String fontsAvenirRegular = 'assets/fonts/Avenir_Regular.ttf';
+  static const String fontsAvenirHeavy = 'assets/fonts/Avenir_Heavy.ttf';
+  static const String fontsAvenirLight = 'assets/fonts/Avenir_Light.ttf';
+  static const String fontsAvenirRegular = 'assets/fonts/Avenir_Regular.ttf';
+  static const String fontsPoppinsBold = 'assets/fonts/Poppins-Bold.ttf';
+  static const String fontsPoppinsRegular = 'assets/fonts/Poppins-Regular.ttf';
   static const String imagesDashboardAndAnalytics =
       'assets/images/dashboard_and_analytics.png';
   static const String imagesHyperLocalMarketplace =

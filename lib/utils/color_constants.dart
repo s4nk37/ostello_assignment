@@ -11,4 +11,6 @@ class ColorConstants {
   static const Color cardGrey = Color(0xff202020);
   static const Color cardBorderGrey = Color(0xff343434);
   static const Color cardFontGrey = Color(0xffA7A8A8);
+
+  static const Color faqQuestionFontColor = Color(0xffCBCACB);
 }
