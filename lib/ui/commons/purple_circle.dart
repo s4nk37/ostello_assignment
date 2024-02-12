@@ -8,38 +8,13 @@ class PurpleCircle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // return Stack(
-    //   children: [
-    //     BackdropFilter(
-    //       filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
-    //       // child: Container(
-    //       //   height: 232,
-    //       //   width: 232,
-    //       //   decoration: const BoxDecoration(
-    //       //     shape: BoxShape.circle,
-    //       //     color: ColorConstants.primaryPurple,
-    //       //   ),
-    //       // ),
-    //     ),
-    //     Container(
-    //       height: 232,
-    //       width: 232,
-    //       decoration: const BoxDecoration(
-    //         shape: BoxShape.circle,
-    //         color: ColorConstants.primaryPurple,
-    //       ),
-    //     )
-    //   ],
-    // );
     return Stack(
       alignment: Alignment.center,
       children: [
         Container(
           height: 232,
           width: 232,
-
           decoration: BoxDecoration(
-            // color: ColorConstants.greyBg.withOpacity(0.7),
             shape: BoxShape.circle,
             boxShadow: [
               BoxShadow(
