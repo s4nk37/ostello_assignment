@@ -9,15 +9,15 @@ class PurpleBlurCircle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
-      width: 100,
+      height: 232,
+      width: 232,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
             color: ColorConstants.primaryPurple.withOpacity(0.2),
-            spreadRadius: 100,
-            blurRadius: 100,
+            spreadRadius: 116,
+            blurRadius: 116,
             offset: const Offset(0, 0), // changes position of shadow
           ),
         ],

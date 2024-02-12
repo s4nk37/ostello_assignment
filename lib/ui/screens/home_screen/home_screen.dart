@@ -1,27 +1,19 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:ostello_assignment/generated/assets.dart';
-import 'package:ostello_assignment/ui/commons/custom_divider.dart';
 import 'package:ostello_assignment/ui/commons/custom_gradient_divider.dart';
 import 'package:ostello_assignment/ui/commons/primary_button.dart';
+import 'package:ostello_assignment/ui/commons/purple_blur_circle.dart';
 import 'package:ostello_assignment/ui/screens/home_screen/benefits_section.dart';
 import 'package:ostello_assignment/ui/screens/home_screen/faq_section.dart';
 import 'package:ostello_assignment/ui/screens/home_screen/feedback_section.dart';
+import 'package:ostello_assignment/ui/screens/home_screen/join_us_card.dart';
 import 'package:ostello_assignment/utils/app_config.dart';
 import 'package:ostello_assignment/utils/color_constants.dart';
 import 'package:ostello_assignment/utils/string_constants.dart';
 
-import '../../commons/purple_blur_circle.dart';
-
-class HomeScreen extends StatefulWidget {
+class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  @override
-  State<HomeScreen> createState() => _HomeScreenState();
-}
-
-class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,30 +23,27 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       body: Column(
         children: [
-          ///Custom Divider
-          const CustomDivider(),
-
           ///HomeScreen Content
           Expanded(
             child: SingleChildScrollView(
               child: Stack(
                 alignment: Alignment.center,
                 children: [
-                  const Positioned(top: 0, child: PurpleBlurCircle()),
+                  const Positioned(top: -24, child: PurpleBlurCircle()),
                   const Positioned(
-                      top: 700, left: -30, child: PurpleBlurCircle()),
+                      top: 700, left: -90, child: PurpleBlurCircle()),
                   const Positioned(
-                      top: 1200, right: -30, child: PurpleBlurCircle()),
+                      top: 1200, right: -120, child: PurpleBlurCircle()),
                   Column(
                     children: [
                       ///Main Section
                       Column(
                         children: [
                           const SizedBox(
-                            height: 35,
+                            height: 40,
                           ),
 
-                          /// Image
+                          /// Ostello Logo
                           Image.asset(
                             Assets.imagesOstelloLogo,
                             width: 153.5,
@@ -158,91 +147,8 @@ class _HomeScreenState extends State<HomeScreen> {
                       ///Gradient Divider
                       const CustomGradientDivider(verticalPadding: 30),
 
-                      Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: Container(
-                          width: double.infinity,
-                          decoration: BoxDecoration(
-                            color: ColorConstants.cardGrey,
-                            borderRadius: BorderRadius.circular(16),
-                            border: Border.all(
-                              color: ColorConstants.cardBorderGrey,
-                            ),
-                          ),
-                          child: Column(
-                            children: [
-                              Row(
-                                children: [
-                                  const Expanded(
-                                    flex: 8,
-                                    child: Padding(
-                                      padding: EdgeInsets.all(16.0),
-                                      child: Column(
-                                        crossAxisAlignment:
-                                            CrossAxisAlignment.start,
-                                        children: [
-                                          Text(
-                                            StringConstants.ostelloTheUltimate,
-                                            style: TextStyle(
-                                              color: ColorConstants.white,
-                                              fontSize: 30,
-                                              fontWeight: FontWeight.w800,
-                                            ),
-                                          ),
-                                          SizedBox(
-                                            height: 10,
-                                          ),
-                                          Text(
-                                            StringConstants.madeWithLove,
-                                            style: TextStyle(
-                                              color: ColorConstants.white,
-                                              fontSize: 16,
-                                              fontWeight: FontWeight.w800,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    flex: 4,
-                                    child: Transform.translate(
-                                      offset: const Offset(0, 40),
-                                      child: Image.asset(
-                                        Assets.imagesRocket,
-                                        width: 170,
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                              Container(
-                                width: double.infinity,
-                                padding: const EdgeInsets.all(8),
-                                decoration: const BoxDecoration(
-                                  color: ColorConstants.greyBg,
-                                  borderRadius: BorderRadius.only(
-                                    bottomLeft: Radius.circular(
-                                        16.0), // Change radius as needed
-                                    bottomRight: Radius.circular(
-                                        16.0), // Change radius as needed
-                                  ),
-                                ),
-                                child: const Text(
-                                  StringConstants.joinUsNow,
-                                  textAlign: TextAlign.center,
-                                  style: TextStyle(
-                                    color: ColorConstants.white,
-                                    fontSize: 10,
-                                    fontWeight: FontWeight.w500,
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                        ),
-                      ),
-
+                      ///Join Us Card
+                      const JoinUsCard(),
                       const SizedBox(
                         height: 40,
                       )

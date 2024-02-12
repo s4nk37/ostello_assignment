@@ -11,6 +11,13 @@ final primaryTheme = ThemeData(
     elevation: 0,
     centerTitle: true,
     toolbarHeight: 56,
+    surfaceTintColor: ColorConstants.grey,
+    shape: Border(
+      bottom: BorderSide(
+        color: ColorConstants.grey, // Change border color as needed
+        width: 1.0,
+      ),
+    ),
     titleTextStyle: TextStyle(
       color: ColorConstants.white,
       fontSize: 16,
