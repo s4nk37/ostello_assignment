@@ -9,8 +9,8 @@ class PurpleBlurCircle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 232,
-      width: 232,
+      height: 100,
+      width: 100,
       decoration: BoxDecoration(
         shape: BoxShape.circle,
         boxShadow: [

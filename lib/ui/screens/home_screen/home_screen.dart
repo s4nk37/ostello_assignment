@@ -27,6 +27,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(StringConstants.benefitsOfOstello),
+        surfaceTintColor: ColorConstants.greyBg,
       ),
       body: Column(
         children: [
@@ -37,8 +38,9 @@ class _HomeScreenState extends State<HomeScreen> {
           Expanded(
             child: SingleChildScrollView(
               child: Stack(
+                alignment: Alignment.center,
                 children: [
-                  const Positioned(top: 0, left: 30, child: PurpleBlurCircle()),
+                  const Positioned(top: 0, child: PurpleBlurCircle()),
                   const Positioned(
                       top: 700, left: -30, child: PurpleBlurCircle()),
                   const Positioned(
