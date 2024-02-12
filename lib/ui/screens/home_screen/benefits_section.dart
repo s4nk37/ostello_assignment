@@ -72,7 +72,7 @@ class BenefitsSection extends StatelessWidget {
                 ),
               ),
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -121,7 +121,7 @@ class BenefitsSection extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(
-                    width: 10,
+                    width: 15,
                   ),
                   Expanded(
                     child: Container(
@@ -169,7 +169,7 @@ class BenefitsSection extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                height: 10,
+                height: 15,
               ),
               Container(
                 width: double.infinity,
